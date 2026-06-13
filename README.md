@@ -1,12 +1,12 @@
 # Loan-Approval-Prediction
 
-Project Overview
+# Project Overview
 
 The Loan Approval Prediction System is a Machine Learning project developed to automate the loan approval process by predicting whether a loan application will be approved or rejected based on applicant financial and demographic information.
 
 The project uses historical loan application data and Machine Learning algorithms to analyze customer profiles, assess creditworthiness, and provide accurate loan approval predictions. A user-friendly Streamlit web application was developed to allow real-time predictions for new loan applicants.
 
-Business Problem
+# Business Problem
 
 Financial institutions receive thousands of loan applications every day. Manual loan evaluation is time-consuming and may lead to inconsistent decisions.
 
@@ -18,7 +18,7 @@ Minimize financial risk
 Provide instant approval predictions
 Dataset Features Used
 
-The model was trained using the following customer attributes:
+# The model was trained using the following customer attributes:
 
 Number of Dependents
 Education Level
@@ -32,7 +32,7 @@ Commercial Asset Value
 Luxury Asset Value
 Bank Asset Value
 
-Target Variable:
+# Target Variable:
 
 Loan Status
 Approved (1)
@@ -40,7 +40,7 @@ Rejected (0)
 Data Preprocessing
 Data Cleaning
 
-Performed multiple preprocessing steps to improve data quality:
+# Performed multiple preprocessing steps to improve data quality:
 
 Removed unnecessary column (loan_id)
 Removed duplicate records
@@ -56,7 +56,7 @@ Commercial Asset Value
 
 This helped improve model stability and prediction performance.
 
-Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
 Performed extensive EDA to understand data patterns and relationships.
 
@@ -73,13 +73,13 @@ Loan amount and loan term showed moderate influence on approval status.
 Feature Engineering
 Label Encoding
 
-Converted categorical variables into numerical format:
+# Converted categorical variables into numerical format:
 
 Education
 Self Employed Status
 Feature Scaling
 
-Applied StandardScaler to normalize numerical features:
+# Applied StandardScaler to normalize numerical features:
 
 Income
 Loan Amount
@@ -89,11 +89,11 @@ Asset Values
 
 This improved model performance and convergence.
 
-Handling Class Imbalance
+# Handling Class Imbalance
 
 Implemented SMOTE (Synthetic Minority Oversampling Technique) to balance the target classes.
 
-Benefits:
+# Benefits:
 
 Reduced bias toward the majority class
 Improved prediction performance for minority class samples
@@ -115,7 +115,7 @@ Minimum Samples Split
 Minimum Samples Leaf
 Model Evaluation
 
-Evaluated models using:
+# Evaluated models using:
 
 Accuracy Score
 Confusion Matrix
@@ -124,7 +124,7 @@ ROC-AUC Score
 
 After comparing all models, Random Forest Classifier achieved the best overall performance and was selected as the final production model.
 
-Model Deployment
+# Model Deployment
 
 Developed an interactive web application using Streamlit.
 
